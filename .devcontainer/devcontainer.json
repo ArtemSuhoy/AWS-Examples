@@ -1,0 +1,10 @@
+{
+  "name": "Node AWS Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip && unzip awscliv2.zip && sudo ./aws/install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["amazonwebservices.aws-toolkit-vscode"]
+    }
+  }
+}
